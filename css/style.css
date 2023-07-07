@@ -1,0 +1,440 @@
+:root{
+    --primary-color: #e76f51;
+    --secondary-color: #2a9d8f;
+    --light-color: #f8f9fa;
+    --dark-color: #6c757d;
+    --max-width: 1100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+h1,h3,h4,h5,h6{
+    font-family:sans-serif;
+    margin: .7rem;
+    line-height: 1.3;
+}
+h2{
+    font-family:sans-serif;
+    margin: .7rem;
+    line-height: 1.3;
+    text-align:center;
+}
+
+p{
+    margin: .5rem 0;
+}
+
+/* utils */
+.container{
+    max-width:var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    background-color: var(--dark-color);
+    color: white;
+    padding: .4rem 1.6rem;
+    text-align: center;
+
+}
+
+.btn-light{background-color: var(--light-color);}
+.btn-dark{background-color: var(--dark-color);}    
+.btn-primary{background-color: var(--primary-color);}   
+.btn-secondary{ background-color: var(--secondary-color);}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);color: white;
+}
+
+.bg-light{
+    background-color:rgb(87, 7, 20);
+    color: #2a9d8f;
+}
+
+.bg-dark{
+    background-color: var(--dark-color);color:white;
+}
+.bg-secondary{
+    background-color: var(--secondary-color) !important;color:white;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
+.p-2{
+    padding: 0.6rem;
+}
+.p-3{
+    padding: 0.8rem;
+}
+.p-4{
+    padding: 1rem;
+}
+
+.pt-1{
+    padding-top: 0.5rem;
+}
+.pt-2{
+    padding-top: 0.6rem;
+}
+.pt-3{
+    padding-top: 0.8rem;
+}
+.pt-4{
+    padding-top: 1rem;
+}
+
+.py-1{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-2{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.px-1{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.px-2{
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+}
+
+.m-1{
+    margin: 0.5rem;
+}
+.m-2{
+    margin: 0.6rem;
+}
+.m-3{
+    margin: 0.8rem;
+}
+.m-4{
+    margin: 1rem;
+}
+
+.mb-1{
+    margin-bottom: 0.5rem;
+}
+.mb-2{
+    margin-bottom: 0.6rem;
+}
+.mb-3{
+    margin-bottom: 0.8rem;
+}
+.mb-4{
+    margin-bottom: 1.6rem;
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+}
+
+.card-primary{
+    background-color:var(--primary-color);
+    padding: 1rem;
+}
+
+/* navbar */
+#main-nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+#main-nav .logo {
+    width: 65px;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-self: start;
+}
+
+#main-nav ul li a {
+    padding: 0.6rem;
+    font-weight: bold;
+}
+
+#main-nav ul li a.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+#main-nav ul li a:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+#main-nav .social-icons {
+    justify-self: end;
+}
+
+.category {
+    display: inline-block;
+    color: white;
+    font-size: 1.9rem;
+    letter-spacing: 4px;
+    padding: .4rem .6rem;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+}
+
+/* header */
+#header {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#header::before {
+    content: '';
+    background: url(https://media.istockphoto.com/id/163915213/tr/foto%C4%9Fraf/close-up-of-mens-rowing-team.jpg?s=612x612&w=0&k=20&c=vj2R5xgG7SZ-eKIBLan8HaF6xdZIDcEwQBVWdIkG3uw=) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#header .header-content {
+    z-index: 2;
+    margin: auto;
+}
+
+#header h2 {
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff9800;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+
+#header p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+#header a.btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+}
+#header a.btn {
+    font-size: 1.9rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#header a.btn:hover {
+    background-color: #388e3c;
+}
+
+
+/* articles */
+
+#main-articles .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*İlk olarak, .card sınıfının stilinde display: flex; flex-direction: column; özelliklerini ekledik. Bu, kartın içeriğini dikey olarak hizalamamızı sağlar. Yani, içerik elemanları (resim, kategori, başlık, paragraf) birbirinin altında yer alır.*/
+#main-articles .card {
+    flex: 0 0 30%;
+    margin: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Daha sonra, .card img stilinde object-fit: cover; özelliğini ekledik. Bu özellik, resimlerin orantılı olarak sığacak şekilde düzenlenmesini sağlar. Resimlerin boyutları korunurken, tüm alana yayılır ve aynı boyutta görünür.*/
+#main-articles .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+}
+
+#main-articles .card .category {
+    margin-top: 1rem;
+}
+
+#main-articles .card h3,
+#main-articles .card p {
+    margin: 0.5rem 0;
+}
+
+/* footer */
+
+#main-footer{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+#main-footer img{
+    width: 150px;
+}
+
+#main-footer a{
+    color: white;
+}
+
+#main-footer .footer-container{
+    display: grid; /*Grid yaptık ve direk hepsi yan yana geldi*/
+    grid-template-columns: repeat(4, 1fr); /*4'e bölüyoruz ve hepsinin alanı eşit olacak*/
+    gap: 1.3rem;
+
+}
+
+#main-footer .footer-container input[type='email']{
+    width: 90%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+#main-footer .footer-container input[type='submit']{
+    width: 90%;
+}
+
+#main-footer .footer-container ul li{
+    padding: .5rem 0;
+    border-bottom: 1px dotted #555;
+    width: 90%;
+    padding: 5px;
+}
+#main-footer .footer-container ul li:hover{
+    background-color: #2a9d8f;
+}
+
+#main-footer .footer-container > *:last-child{
+    background-color: #e76f51;
+    grid-column: 1 / span 4;
+    text-align: center;
+    padding: 5px;
+}
+
+/* article details */
+
+.page-container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2.5rem 0;
+    gap: 1.5rem;
+}
+
+.page-container > *:first-child{
+    grid-row: 1 / span 3;
+}
+
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:#2a9d8f;
+    align-items: center;
+}
+
+.page-container #categories ul li{
+    padding: .5rem 0;
+    border-bottom: 1px dotted #555;
+    width: 90%;
+    padding: 5px;
+}
+
+.page-container #categories ul li:hover{
+    background-color: #e76f51;
+}
+
+.page-container #categories ul li a:hover{
+    color: #fff;
+}
